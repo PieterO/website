@@ -27,7 +27,7 @@ return [
         }
     },
     'url' => function ($page, $path) {
-        return Str::startsWith($path, 'http') ? $path : '/' . trimPath($path);
+        return Str::startsWith($path, 'http') ? $path : '/' . trimPath($path) . '/';
     },
     'team' => require_once('team.php'),
 
